@@ -1,7 +1,6 @@
 package semana1.features;
 
-import semana1.entities.BankAccount;
-import semana1.entities.User;
+import semana1.entities.user.User;
 
 import java.util.Scanner;
 
@@ -21,23 +20,23 @@ public class FBankAccount {
                 """);
     }
 
-    public static BankAccount crearCuentaBanco(User usuario) {
+    public static BankAccountOld crearCuentaBanco(User usuario) {
         Scanner scanner = new Scanner(System.in);
 
-        BankAccount cuentaBanco;
+        BankAccountOld cuentaBanco;
 
         System.out.print("\nMonto inicial: ");
         double montoInicial = scanner.nextDouble();
         System.out.print("Estado de la cuenta: ");
         boolean estado = scanner.nextBoolean();
 
-        return cuentaBanco = new BankAccount(montoInicial, estado, usuario);
+        return cuentaBanco = new BankAccountOld(montoInicial, estado, usuario);
     }
 
-    public static BankAccount bankAccountDummy() {
-        BankAccount cuentaBanco;
+    public static BankAccountOld bankAccountDummy() {
+        BankAccountOld cuentaBanco;
         User usuario = FUser.usuarioDummy();
-        return cuentaBanco = new BankAccount(
+        return cuentaBanco = new BankAccountOld(
                 15432.0,
                 true,
                 usuario

@@ -1,13 +1,5 @@
 package semana1;
 
-import semana1.entities.BankAccount;
-import semana1.entities.User;
-import semana1.features.FBankAccount;
-import semana1.features.FPresentation;
-import semana1.features.FUser;
-
-import java.util.Scanner;
-
 public class Main {
 //    public static void main(String[] args) {
 //

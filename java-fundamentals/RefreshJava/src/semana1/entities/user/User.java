@@ -1,4 +1,4 @@
-package semana1.entities;
+package semana1.entities.user;
 
 public class User {
     private String firstName;

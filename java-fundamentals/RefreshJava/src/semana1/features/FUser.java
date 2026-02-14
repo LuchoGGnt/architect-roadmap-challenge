@@ -1,6 +1,6 @@
 package semana1.features;
 
-import semana1.entities.User;
+import semana1.entities.user.User;
 
 import java.util.Scanner;
 
