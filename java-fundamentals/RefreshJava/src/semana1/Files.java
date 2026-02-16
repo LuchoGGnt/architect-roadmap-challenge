@@ -18,6 +18,10 @@ public class Files {
 //        }
     }
 
+    public static void guardarObjetoEnArchivo() {
+
+    }
+
     public static void newFile(String route, String fileName) {
         File file = new File(route + "\\" + fileName);
         try {

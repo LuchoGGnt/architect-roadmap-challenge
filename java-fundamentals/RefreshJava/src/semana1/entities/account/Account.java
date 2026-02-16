@@ -1,24 +1,28 @@
 package semana1.entities.account;
 
-import java.time.LocalDate;
+import java.io.Serializable;
+import java.time.LocalDateTime;
 import java.util.UUID;
 
-public class Account {
+public class Account implements Serializable {
     private final UUID uuid = UUID.randomUUID();
-    private final LocalDate createdDate = LocalDate.now();
+    private final LocalDateTime createdDate = LocalDateTime.now();
     private boolean state;
 
     public Account(boolean state) {
         this.state = state;
     }
 
-    public void activateAccount() {
-        this.state = true;
+    public UUID getUuid() {
+        return this.uuid;
     }
-    public LocalDate getCreatedDate() {
+    public LocalDateTime getCreatedDate() {
         return createdDate;
     }
     public boolean getState() {
         return state;
+    }
+    public void activateAccount() {
+        this.state = true;
     }
 }
